@@ -14,8 +14,8 @@ function App() {
       <Navbar />
       <ShortURL urls={urls} setUrls={setUrls} />
       <ListURL urls={urls} setUrls={setUrls} />
-      <footer class="mt-20">
-        <p>Made with <span style={{ color: 'red' }}>❤️</span> by Gokulakrishnan :-)</p>
+      <footer className="fixed bottom-0 py-2">
+        <p>Made with <span className="text-red-500">❤️</span> by Gokulakrishnan :-)</p>
       </footer>
     </>
   )
