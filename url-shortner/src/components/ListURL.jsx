@@ -34,7 +34,7 @@ export default function ListURL({urls, setUrls}) {
               <td className={`${tableCellClass} text-left`}>
                 {url.original_url && url.original_url.length > 100 ? `${decodeURIComponent(url.original_url.substring(0, 100))}...` : decodeURIComponent(url.original_url)}
               </td>
-              <td className={tableCellClass}>{url.tag}</td>
+              <td className={tableCellClass}>{SERVER_ENDPOINT}{url.tag}</td>
               <td className={tableCellClass}>{new Date(url.created_at).toLocaleString()}</td>
             </tr>
           ))}
