@@ -1,0 +1,18 @@
+current directory: /src/gems/stringio-3.1.5/ext/stringio
+/usr/local/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /src/gems/stringio-3.1.5/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250223-10-a0ayfn sitelibdir\=./.gem.20250223-10-a0ayfn clean
+
+current directory: /src/gems/stringio-3.1.5/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250223-10-a0ayfn sitelibdir\=./.gem.20250223-10-a0ayfn
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /src/gems/stringio-3.1.5/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250223-10-a0ayfn sitelibdir\=./.gem.20250223-10-a0ayfn install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20250223-10-a0ayfn
+
+current directory: /src/gems/stringio-3.1.5/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250223-10-a0ayfn sitelibdir\=./.gem.20250223-10-a0ayfn clean

@@ -1,0 +1,37 @@
+# name: "geo_url_shortner"
+
+version: "3.3"
+
+services:
+  react-web:
+    build: ./url-shortner/
+    command: sh -c "npm i && npm run dev"
+    ports:
+    - 8080:5173
+    volumes:
+    - ./url-shortner:/app
+  server:
+    build: 
+      context: ./geo_url_shortner_server/
+      dockerfile: local.DockerFile
+    command: "bin/setup"
+    ports:
+    - 3010:3000
+    volumes:
+    - ./geo_url_shortner_server:/src
+    depends_on:
+    - postgres
+    
+  postgres:
+    image: postgres:16.1
+    restart: unless-stopped
+    ports:
+    - 6010:5432
+    volumes:
+    - postgres-data:/var/lib/postgresql/data
+    environment:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: postgres
+
+volumes:
+  postgres-data:

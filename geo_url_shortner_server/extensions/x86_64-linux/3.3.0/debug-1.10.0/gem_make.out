@@ -1,0 +1,19 @@
+current directory: /src/gems/debug-1.10.0/ext/debug
+/usr/local/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /src/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250223-10-clrlo3 sitelibdir\=./.gem.20250223-10-clrlo3 clean
+
+current directory: /src/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250223-10-clrlo3 sitelibdir\=./.gem.20250223-10-clrlo3
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /src/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250223-10-clrlo3 sitelibdir\=./.gem.20250223-10-clrlo3 install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20250223-10-clrlo3/debug
+
+current directory: /src/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250223-10-clrlo3 sitelibdir\=./.gem.20250223-10-clrlo3 clean
