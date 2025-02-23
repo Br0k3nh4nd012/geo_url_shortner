@@ -56,7 +56,6 @@ export default function ShortURL({urls, setUrls}) {
         SERVER_ENDPOINT+'api/get_short_link', { link }
     )
     .then((response) => {
-      console.log(response.data)
           setLoading(false);
           setShortLink(response.data.tag);
           setUrls([{

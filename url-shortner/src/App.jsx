@@ -3,7 +3,7 @@ import './App.css'
 import Navbar from './navbar.jsx'
 import ShortURL from './components/ShortURL.jsx'
 import ListURL from './components/ListURL.jsx'
-import { FaRegSmileWink } from "react-icons/fa";
+import { FaRegCopy } from "react-icons/fa";
 
 
 function App() {
